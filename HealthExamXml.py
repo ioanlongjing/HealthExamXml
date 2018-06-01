@@ -11,7 +11,7 @@ for name in glob.glob('un/*.xml'):
                     print(" The Office Security Updata is %s "  % nodeOffice.text )
 
             for nodeWindows in page.xpath('//Check[@Name="Windows Security Updates"]/Advice'):
-                    print(" The Windows Seucrity Update is %s " %nodeOffice.text )
+                    print(" The Windows Seucrity Update is %s " %nodeWindows.text )
 
         except:
             print( " The File context is null." )
